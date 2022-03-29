@@ -6,8 +6,7 @@ namespace SefIrmak
     public class Basket : MonoBehaviour
     {
         [Header("Set Dynamically")]
-        public TextMeshProUGUI scoreText;
-       
+        public TextMeshProUGUI scoreText;       
       
         void Start()
         {
@@ -23,6 +22,11 @@ namespace SefIrmak
                 int scorePoint = int.Parse(scoreText.text);
                 scorePoint += 100;
                 scoreText.text = scorePoint.ToString();
+                // Track the highest score
+                if (scorePoint > HighScore.score)
+                {
+                    HighScore.score = scorePoint;
+                }
                 // destroy bomb object
                 Destroy(other.gameObject);
             }

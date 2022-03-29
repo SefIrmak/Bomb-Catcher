@@ -14,8 +14,9 @@ namespace SefIrmak
             {
                 Debug.Log("Game Over");
                 Destroy(this.gameObject);
-                // UPDATES THE GAME MANAGER TO LOSE HEALTH (IF HEALTH<=0 ROLL END LOGIC)
-                
+                // Get the reference to the game object and its script
+                BombCatcher bcScript = GameObject.Find("BombCatcher").GetComponent<BombCatcher>();
+                bcScript.BombDestroyed();                
             }
             // move the bomb downward as soon as Instantiated
             transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);

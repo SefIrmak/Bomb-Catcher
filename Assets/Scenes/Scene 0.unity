@@ -872,9 +872,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 5839515448640841180, guid: ea1dc2e94d09e4b4fa64f5a0fece20e0, type: 3}
-  basketsArray: []
-  basketBottomY: -2.25
-  basketSpacingY: -0.75
+  basketsList: []
+  basketBottomY: -3.75
+  basketSpacingY: 0.75
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,15 +966,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be778535f64ef7f43b2f666b4aea87c1, type: 3}
+  m_Script: {fileID: 11500000, guid: ef59a76a532d0784c9192783432c9d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketPrefab: {fileID: 5839515448640841180, guid: ea1dc2e94d09e4b4fa64f5a0fece20e0, type: 3}
-  basketsArray: []
-  basketBottomY: -2
-  basketSpacingY: -0.75
 --- !u!1001 &968229446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,6 +1067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1097275851}
+  - component: {fileID: 1097275854}
   - component: {fileID: 1097275853}
   - component: {fileID: 1097275852}
   m_Layer: 5
@@ -1196,6 +1193,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097275850}
   m_CullTransparentMesh: 1
+--- !u!114 &1097275854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097275850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17c789f6e48efd489fad6aea7931aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1370099998
 GameObject:
   m_ObjectHideFlags: 0
